@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="blocks">
+      
+      <div class="login-block block">
+        <h1>Authorization</h1>
+        <div class="inputs">
+          <label for="name">Login:</label>
+          <input id="login" type="text" placeholder="Enter the Login or Email">
+          <label for="password">Password:</label>
+          <input id="password" type="password" placeholder="Enter the Password">
+        </div>
+        <button onclick="login()">Sign in!</button>
+        <p>Don't have an account? <a href="#" onclick="showReg()">Sign up!</a></p>
+        <p>Want to change password? <a href="#" onclick="showChange()">Change Password!</a></p>
+        <p>Forgot password <a href="#" onclick="showRecovery()">Recovery Password!</a></p>
+      </div>
+
+      <div class="auth-block block">
+        <h1>Registration</h1>
+        <div class="inputs">
+          <label for="login">Login:</label>
+          <input id="loginReg" type="text" placeholder="Enter the Login">
+          <label for="email">Email:</label>
+          <input id="emailReg" type="email" placeholder="Enter the Email">
+          <label for="password">Password:</label>
+          <input id="passwordReg" type="password" placeholder="Enter the Password">
+        </div>
+        <button onclick="registrate()">Sign up!</button>
+      </div>
+
+      <div class="logged-block block">
+        <img src="Assets/done.png" alt="success">
+        <button onclick="signout()">Sign out!</button>
+      </div>
+
+      <div class="change-password-block block">
+        <h1>Change Password</h1>
+        <div class="inputs">
+          <label for="email">Email:</label>
+          <input id="emailChange" type="email" placeholder="Enter your Email">
+          <label for="oldPassword">Old Password:</label>
+          <input id="oldPasswordInput" type="password" placeholder="Enter Old Password">
+          <label for="newPassword">New Password:</label>
+          <input id="newPasswordInput" type="password" placeholder="Enter New Password">
+        </div>
+        <button onclick="changePassword()">Change Password!</button>
+      </div>
+
+      <div class="password-recovery-block block">
+        <h1>Password Recovery</h1>
+        <div class="inputs">
+          <label for="email">Email:</label>
+          <input id="emailRecovery" type="email" placeholder="Enter your Email">
+        </div>
+        <button onclick="passwordRecovery()">Recover Password!</button>
+      </div>
+
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
